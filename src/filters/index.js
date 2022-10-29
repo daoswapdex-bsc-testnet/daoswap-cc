@@ -3,7 +3,8 @@ export {
   parseTime,
   formatTime,
   formatSeconds,
-  formatCountdown
+  formatCountdown,
+  keepNumber
 } from "@/utils/utilities";
 export { formattedNum } from "./web3";
 

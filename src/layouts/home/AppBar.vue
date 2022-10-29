@@ -43,6 +43,14 @@
             >{{ $t("Stake") }}</v-tab
           > -->
           <v-tab
+            to="/hash-mining"
+            :ripple="false"
+            class="font-weight-bold"
+            min-width="96"
+            text
+            >{{ $t("Hash Mining") }}</v-tab
+          >
+          <v-tab
             to="/stake-dst"
             :ripple="false"
             class="font-weight-bold"
@@ -128,6 +136,9 @@
         <v-list-item-group v-model="group" color="#93B954">
           <v-list-item to="/">
             <v-list-item-title>{{ $t("Home") }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/hash-mining">
+            <v-list-item-title>{{ $t("Hash Mining") }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item to="/stake">
             <v-list-item-title>{{ $t("Stake") }}</v-list-item-title>

@@ -197,6 +197,10 @@ export default {
   "Power DAO-USDT Liquidity Value": "DAO-USDT流动性价值",
   "Power Phase": "第",
   "Power Expect": "期",
+  "Personal cumulative total accounting strength": "个人累计总算力",
+  "LP quantity of DAO-USDT to be added in the next period":
+    "下期需新增DAO-USDT的LP数量",
+  "Token Symbol": "代币",
 
   Activities: "进行中的活动",
   "Will caculate and airdrop within 3 workdays after the last day.":

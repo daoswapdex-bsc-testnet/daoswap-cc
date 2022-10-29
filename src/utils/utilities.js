@@ -32,6 +32,15 @@ export function ellipseAddress(address, width = 10) {
   return `${address.slice(0, width)}...${address.slice(-width)}`;
 }
 
+export function keepNumber(value, length = 5) {
+  const num = Number(value).toFixed(length);
+  if (num === "NaN") {
+    return "0";
+  }
+  const realVal = num.substring(0, num.length - 1);
+  return realVal;
+}
+
 /**
  * Parse the time to string
  * @param {(Object|string|number)} time

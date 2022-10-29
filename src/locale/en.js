@@ -203,6 +203,10 @@ export default {
   "Power DAO-USDT Liquidity Value": "DAO-USDT Liquidity Value",
   "Power Phase": "Phase",
   "Power Expect": "",
+  "Personal cumulative total accounting strength": "Total Power",
+  "LP quantity of DAO-USDT to be added in the next period":
+    "LP quantity of DAO-USDT to be added in the next period",
+  "Token Symbol": "Token Symbol",
 
   Activities: "Activities",
   "Will caculate and airdrop within 3 workdays after the last day.":
