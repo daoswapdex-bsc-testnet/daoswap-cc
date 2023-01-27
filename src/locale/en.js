@@ -204,6 +204,8 @@ export default {
   "Power Phase": "Phase",
   "Power Expect": "",
   "Personal cumulative total accounting strength": "Total Power",
+  "New accumulated calculation power in the current period": "New Power",
+  "Reward ratio of each calculation power": "Reward Ratio",
   "LP quantity of DAO-USDT to be added in the next period":
     "LP quantity of DAO-USDT to be added in the next period",
   "Token Symbol": "Token Symbol",
