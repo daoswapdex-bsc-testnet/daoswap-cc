@@ -630,46 +630,43 @@ export default {
             const rewardsInfo = await contract.methods
               .getRewardsInfo()
               .call({ from: this.address });
-            if (
-              !rewardsInfo.rewardDAO.isClaim ||
-              !rewardsInfo.rewardDST.isClaim
-            ) {
-              const tempData = {
-                periodId: item.id,
-                contractAddress: item.address,
-                nodeType: judgeCHNNodeTypeByValue(rewardsInfo.nodeType),
-                power: weiToEther(rewardsInfo.power, this.web3),
-                powerIncrement: weiToEther(
-                  rewardsInfo.powerIncrement,
-                  this.web3
-                ),
-                nextStandard: rewardsInfo.nextStandard,
-                rewardDAO: {
-                  token: rewardsInfo.rewardDAO.token,
-                  tokenSymbol: rewardsInfo.rewardDAO.tokenSymbol,
-                  amount: weiToEther(rewardsInfo.rewardDAO.amount, this.web3),
-                  isClaim: rewardsInfo.rewardDAO.isClaim,
-                  isAble: JSBI.greaterThan(
-                    JSBI.BigInt(rewardsInfo.rewardDAO.amount),
-                    JSBI.BigInt(0)
-                  )
-                },
-                rewardDST: {
-                  token: rewardsInfo.rewardDST.token,
-                  tokenSymbol: rewardsInfo.rewardDST.tokenSymbol,
-                  amount: weiToEther(rewardsInfo.rewardDST.amount, this.web3),
-                  isClaim: rewardsInfo.rewardDST.isClaim,
-                  isAble: JSBI.greaterThan(
-                    JSBI.BigInt(rewardsInfo.rewardDST.amount),
-                    JSBI.BigInt(0)
-                  )
-                },
-                startTime: startTime,
-                endTime: endTime,
-                rewardRatio: rewardRatio
-              };
-              this.powerDataListNew2.push(tempData);
-            }
+            // if (
+            //   !rewardsInfo.rewardDAO.isClaim ||
+            //   !rewardsInfo.rewardDST.isClaim
+            // ) {
+            const tempData = {
+              periodId: item.id,
+              contractAddress: item.address,
+              nodeType: judgeCHNNodeTypeByValue(rewardsInfo.nodeType),
+              power: weiToEther(rewardsInfo.power, this.web3),
+              powerIncrement: weiToEther(rewardsInfo.powerIncrement, this.web3),
+              nextStandard: rewardsInfo.nextStandard,
+              rewardDAO: {
+                token: rewardsInfo.rewardDAO.token,
+                tokenSymbol: rewardsInfo.rewardDAO.tokenSymbol,
+                amount: weiToEther(rewardsInfo.rewardDAO.amount, this.web3),
+                isClaim: rewardsInfo.rewardDAO.isClaim,
+                isAble: JSBI.greaterThan(
+                  JSBI.BigInt(rewardsInfo.rewardDAO.amount),
+                  JSBI.BigInt(0)
+                )
+              },
+              rewardDST: {
+                token: rewardsInfo.rewardDST.token,
+                tokenSymbol: rewardsInfo.rewardDST.tokenSymbol,
+                amount: weiToEther(rewardsInfo.rewardDST.amount, this.web3),
+                isClaim: rewardsInfo.rewardDST.isClaim,
+                isAble: JSBI.greaterThan(
+                  JSBI.BigInt(rewardsInfo.rewardDST.amount),
+                  JSBI.BigInt(0)
+                )
+              },
+              startTime: startTime,
+              endTime: endTime,
+              rewardRatio: rewardRatio
+            };
+            this.powerDataListNew2.push(tempData);
+            // }
           }
         });
         await Promise.all(getResult);
@@ -697,33 +694,33 @@ export default {
             const rewardsInfo = await contract.methods
               .getRewardsInfo()
               .call({ from: this.address });
-            if (
-              !rewardsInfo.rewardDAO.isClaim ||
-              !rewardsInfo.rewardDST.isClaim
-            ) {
-              const tempData = {
-                periodId: item.id,
-                contractAddress: item.address,
-                nodeType: judgeCHNNodeTypeByValue(rewardsInfo.nodeType),
-                power: weiToEther(rewardsInfo.power, this.web3),
-                nextStandard: rewardsInfo.nextStandard,
-                rewardDAO: {
-                  token: rewardsInfo.rewardDAO.token,
-                  tokenSymbol: rewardsInfo.rewardDAO.tokenSymbol,
-                  amount: weiToEther(rewardsInfo.rewardDAO.amount, this.web3),
-                  isClaim: rewardsInfo.rewardDAO.isClaim
-                },
-                rewardDST: {
-                  token: rewardsInfo.rewardDST.token,
-                  tokenSymbol: rewardsInfo.rewardDST.tokenSymbol,
-                  amount: weiToEther(rewardsInfo.rewardDST.amount, this.web3),
-                  isClaim: rewardsInfo.rewardDST.isClaim
-                },
-                startTime: startTime,
-                endTime: endTime
-              };
-              this.powerDataListNew.push(tempData);
-            }
+            // if (
+            //   !rewardsInfo.rewardDAO.isClaim ||
+            //   !rewardsInfo.rewardDST.isClaim
+            // ) {
+            const tempData = {
+              periodId: item.id,
+              contractAddress: item.address,
+              nodeType: judgeCHNNodeTypeByValue(rewardsInfo.nodeType),
+              power: weiToEther(rewardsInfo.power, this.web3),
+              nextStandard: rewardsInfo.nextStandard,
+              rewardDAO: {
+                token: rewardsInfo.rewardDAO.token,
+                tokenSymbol: rewardsInfo.rewardDAO.tokenSymbol,
+                amount: weiToEther(rewardsInfo.rewardDAO.amount, this.web3),
+                isClaim: rewardsInfo.rewardDAO.isClaim
+              },
+              rewardDST: {
+                token: rewardsInfo.rewardDST.token,
+                tokenSymbol: rewardsInfo.rewardDST.tokenSymbol,
+                amount: weiToEther(rewardsInfo.rewardDST.amount, this.web3),
+                isClaim: rewardsInfo.rewardDST.isClaim
+              },
+              startTime: startTime,
+              endTime: endTime
+            };
+            this.powerDataListNew.push(tempData);
+            // }
           }
         });
         await Promise.all(getResult);

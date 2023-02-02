@@ -7,6 +7,7 @@ import VueRouter from "vue-router";
 // import AirdropToRelationship from "../views/airdrop/AirdropToRelationship.vue";
 // import AirdropForSwapsSnapshot from "../views/airdrop/AirdropForSwapsSnapshot.vue";
 import ComputingPowerMiningForLiquidity from "../views/chn/ComputingPowerMiningForLiquidity.vue";
+import NewPowerReward from "../views/chn/NewPowerReward.vue";
 // import ComputingPowerMiningForLiquidityCreation from "../views/chn/ComputingPowerMiningForLiquidityCreation.vue";
 import CrowdsaleForRetailUnlimited from "../views/crowdsale/crowdsaleForRetailUnlimited/CrowdsaleForRetailUnlimited.vue";
 import CrowdsaleForRetailUnlimitedHistory from "../views/crowdsale/crowdsaleForRetailUnlimited/CrowdsaleForRetailUnlimitedHistory.vue";
@@ -80,6 +81,11 @@ const routes = [
         path: "/hash-mining",
         name: "Hash Mining",
         component: ComputingPowerMiningForLiquidity
+      },
+      {
+        path: "/new-power-reward",
+        name: "New Power Reward",
+        component: NewPowerReward
       },
       // {
       //   path: "/competition-mining",

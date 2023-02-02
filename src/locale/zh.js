@@ -152,7 +152,8 @@ export default {
   Node: {
     None: "无",
     "Planet node": "行星节点",
-    "Stellar node": "恒星节点"
+    "Stellar node": "恒星节点",
+    "General node": "普通账号"
   },
   "Choose a forging pool": "选择锻造矿池",
   "Enter the forging amount": "输入锻造额度",
@@ -227,5 +228,7 @@ export default {
 
   "Task 6": "任务6",
 
-  "Please change BNB Smart Chain": "请切换BSC链"
+  "Please change BNB Smart Chain": "请切换BSC链",
+
+  "New Power Reward": "新增算力奖励"
 };

@@ -51,6 +51,14 @@
             >{{ $t("Hash Mining") }}</v-tab
           >
           <v-tab
+            to="/new-power-reward"
+            :ripple="false"
+            class="font-weight-bold"
+            min-width="96"
+            text
+            >{{ $t("New Power Reward") }}</v-tab
+          >
+          <v-tab
             to="/stake-dst"
             :ripple="false"
             class="font-weight-bold"
@@ -139,6 +147,9 @@
           </v-list-item>
           <v-list-item to="/hash-mining">
             <v-list-item-title>{{ $t("Hash Mining") }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item to="/new-power-reward">
+            <v-list-item-title>{{ $t("New Power Reward") }}</v-list-item-title>
           </v-list-item>
           <!-- <v-list-item to="/stake">
             <v-list-item-title>{{ $t("Stake") }}</v-list-item-title>

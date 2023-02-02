@@ -101,6 +101,8 @@ export function judgeCHNNodeTypeByValue(value) {
     return "Planet node";
   } else if (value == 1) {
     return "Stellar node";
+  } else if (value == 3) {
+    return "General node";
   } else {
     return "None";
   }

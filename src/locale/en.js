@@ -156,7 +156,8 @@ export default {
   Node: {
     None: "None",
     "Planet node": "Planet node",
-    "Stellar node": "Stellar node"
+    "Stellar node": "Stellar node",
+    "General node": "General node"
   },
   "Choose a forging pool": "Choose a forging pool",
   "Enter the forging amount": "Enter the forging amount",
@@ -233,5 +234,7 @@ export default {
 
   "Task 6": "Task 6",
 
-  "Please change BNB Smart Chain": "Please change BNB Smart Chain"
+  "Please change BNB Smart Chain": "Please change BNB Smart Chain",
+
+  "New Power Reward": "New Power Reward"
 };
