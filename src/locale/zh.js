@@ -12,6 +12,7 @@ export default {
   PE: "私募",
   Whitepaper: "白皮书",
   News: "新闻",
+  Certificate: "证书",
 
   Close: "关闭",
   "No Data": "暂无数据",

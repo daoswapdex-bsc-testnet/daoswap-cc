@@ -13,6 +13,7 @@ import CrowdsaleForRetailUnlimited from "../views/crowdsale/crowdsaleForRetailUn
 import CrowdsaleForRetailUnlimitedHistory from "../views/crowdsale/crowdsaleForRetailUnlimited/CrowdsaleForRetailUnlimitedHistory.vue";
 // import StakingNodeRewards from "../views/staking-node/StakingNodeRewards.vue";
 import InviteForRelationship from "../views/relationship/InviteForRelationship.vue";
+import Certificate from "../views/certificate/Index.vue";
 
 Vue.use(VueRouter);
 
@@ -101,6 +102,11 @@ const routes = [
         path: "/invite",
         name: "Invite",
         component: InviteForRelationship
+      },
+      {
+        path: "/certificate",
+        name: "Certificate",
+        component: Certificate
       },
       {
         path: "*",

@@ -12,6 +12,7 @@ export default {
   PE: "PE",
   Whitepaper: "Whitepaper",
   News: "News",
+  Certificate: "Certificate",
 
   Close: "Close",
   "No Data": "No Data",
